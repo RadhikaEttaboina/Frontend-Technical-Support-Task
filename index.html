@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Boxes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="box-container">
+        <div class="bogoDiv">
+            <span class="line"></span>
+            <h3 class="Its-BOGO">YAY! It's BOGO</h3>
+            <span class="line"></span>
+        </div>
+        
+        <div class="box" id="box1">
+            <fieldset><legend>MOST POPULAR</legend></fieldset>
+            <div class="box-content">
+                <div class="Unit-row">
+                    <p><span> <input type="radio" name="unit" id="unit1"></span> 
+                        <b>1 Unit </b><span id="offer">10% Off</span></p>
+                    <p>$10.00 USD</p>
+                </div>
+                <div class="standard-row">
+                <p>Standard Price</p>
+                <p class="standardPrice">$24.00 USD</p>
+                </div>
+                <div class="options">
+                    <div class="option-labels">
+                        <label>Size <span></i></span></label>
+                        <label>Color</label>
+                    </div>
+                    <div class="option-group">
+                        <label for="size1">#1:</label>
+                        <select id="size1">
+                            <option value="small">S</option>
+                            <option value="medium">M</option>
+                            <option value="large">L</option>
+                        </select>
+                        <select id="color1">
+                            <option value="black">Colour</option>
+                            <option value="red">Red</option>
+                            <option value="blue">Blue</option>
+                        </select>
+                    </div>
+                    <div class="option-group">
+                        <label for="size2">#2:</label>
+                        <select id="size2">
+                            <option value="small">S</option>
+                            <option value="medium">M</option>
+                            <option value="large">L</option>
+                        </select>
+                        <select id="color2">
+                            <option value="black">Colour</option>
+                            <option value="red">Red</option>
+                            <option value="blue">Blue</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box" id="box2">
+            <fieldset><legend>MOST POPULAR</legend></fieldset>
+            <div class="box-content">
+                <div class="Unit-row">               
+                  <p><span><input type="radio" name="unit" id="unit2"></span>
+                    <b>2 Unit</b> <span id="offer">20% Off</span></p>
+                 <p>$18.00 USD</p>
+               </div>
+               <div class="standard-row">
+                 <p align="start">Standard Price</p>
+                 <p class="standardPrice">$24.00 USD</p>
+                </div>
+               <div class="options">
+                <div class="option-labels">
+                        <label>Size</label>
+                        <label>Color</label>
+                    </div>
+                <div class="option-group">
+                    <label for="size1">#1:</label>
+                    <select id="size1">
+                        <option value="small">S</option>
+                        <option value="medium">M</option>
+                        <option value="large">L</option>
+                    </select>
+                    <select id="color1">
+                        <option value="black">Colour</option>
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                    </select>
+                </div>
+                <div class="option-group">
+                    <label for="size2">#2:</label>
+                    <select id="size2">
+                        <option value="small">S</option>
+                        <option value="medium">M</option>
+                        <option value="large">L</option>
+                    </select>
+                    <select id="color2">
+                        <option value="black">Colour</option>
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                    </select>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="box" id="box3">
+            <fieldset><legend>MOST POPULAR</legend></fieldset>
+            <div class="box-content">
+            <div class="Unit-row">
+                <p><span><input type="radio" name="unit" id="unit2"></span>
+                    <b>3 Unit</b> <span id="offer">30% Off</span></p>
+                <p>$24.00 USD</p>
+            </div>
+            <div class="standard-row">
+                <p align="start">Standard Price</p>
+                <p class="standardPrice">$24.00 USD</p>
+            </div>
+            
+            <div class="options">
+                <div class="option-labels">
+                    <label>Size</label>
+                    <label>Color</label>
+                </div>
+                <div class="option-group">
+                    <label for="size1">#1:</label>
+                    <select id="size1">
+                        <option value="small">S</option>
+                        <option value="medium">M</option>
+                        <option value="large">L</option>
+                    </select>
+                    <select id="color1">
+                        <option value="black">Colour</option>
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                    </select>
+                </div>
+                <div class="option-group">
+                    <label for="size2">#2:</label>
+                    <select id="size2">
+                        <option value="small">S</option>
+                        <option value="medium">M</option>
+                        <option value="large">L</option>
+                    </select>
+                    <select id="color2">
+                        <option value="black">Colour</option>
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                    </select>
+                </div>
+            </div>
+            </div>
+        </div>
+      <div class="total">
+        <p style="color: #FF6B82;">Free Delivery</p>
+        <p style="color: #000000;">Total: </p>
+      </div>
+    <div>
+        <button class="addButton" style="color: white; background-color: #FF6B82;">+ Add to Cart</button>
+    </div>
+    <div>
+        <p class="pumper" style="font-style: italic;">@Powered by Pumper</p>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

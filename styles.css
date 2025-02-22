@@ -1,0 +1,217 @@
+.box-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bogoDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.line {
+    width: 107px;
+    height: 2px;
+    background-color: #c8c8c8;
+    margin: 0 10px;
+}
+
+.Its-BOGO {
+    color: #FF6B82;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.box {
+    width: 341px;
+    max-height: 94.11px;
+    overflow: hidden;
+    opacity: 1;
+    cursor: pointer;
+    border: 2px solid #c8c8c8;
+    padding: 10px;
+    margin: 10px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.expanded {
+    border: 2px solid #FF6B82;
+    box-shadow: 0 0 10px rgba(255, 107, 130, 0.5);
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+legend {
+    width: 129px;
+    display: none;
+    position: absolute;
+    top: -14px;
+    left: 60%;
+    transform: translateX(-8%);
+    background-color: #FF6B82;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.box.expanded legend {
+    display: block;
+}
+
+.box-content {
+    padding: 10px;
+    text-align: center;
+}
+
+.box.expanded {
+    max-height: 300px;
+}
+
+.options {
+    display: none;
+    margin-top: -10px;
+}
+
+#offer {
+    background-color: #FF6B82;
+    color: white;
+    padding: 1px 9px;
+}
+
+.Unit-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.option-group {
+    margin-bottom: 10px;
+}
+
+.option-group select {
+    width: 80px;
+    height: 30px;
+    position: relative;
+    left: 10px;
+}
+
+.standard-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 89%;
+    position: relative;
+    top: -10px;
+    margin: -16px 0px 0px 24px;
+}
+
+.total {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 43%;
+    position: relative;
+    top: -10px;
+    margin: 0px 48px 0 0px; 
+}
+body:has(input[type="radio"]:checked) .total {
+    margin: 0; 
+}
+.addButton {
+    width: 358px;
+    height: 40px;
+    border-radius: 4px;
+    padding: 10px;
+    border: none;
+}
+
+.pumper {
+    color: #00000066;
+    font-weight: 400;
+    size: 12px;
+    margin: 4px 0px 0px 200px;
+}
+
+.option-labels {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0px 39px 5px 45px;
+}
+
+.standardPrice {
+    text-decoration: line-through;
+    color: darkgray;
+    font-size: smaller;
+}
+
+input[type="radio" i] {
+    margin-top: auto;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 14px;
+    height: 14px;
+    border: 2px solid #c8c8c8;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    background-color: white;
+}
+
+input[type="radio" i]:checked {
+    background-color: #FF6B82;
+    border-color: #FF6B82;
+}
+
+input[type="radio" i]::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+input[type="radio" i]:checked::before {
+    opacity: 1;
+}
+
+input[type="radio" i]:focus {
+    outline: none;
+    box-shadow: 0 0 5px #FF6B82;
+}
+
+input[type="radio" i]:hover {
+    border-color: #D94F60;
+}
+/* Style for the select dropdown */
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23000000"><path d="M7 10l5 5 5-5z"/></svg>'); /* Upward Arrow */
+    background-repeat: no-repeat;
+    background-position: right 7px center;
+    background-size: 17px;
+    
+}
+.option-group select {
+    padding: 0px 0px 0px 4px;
+}
